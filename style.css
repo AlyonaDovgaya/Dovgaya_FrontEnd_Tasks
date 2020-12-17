@@ -1,0 +1,144 @@
+/*Фон всего сайта*/
+body{
+  background: #edeef0;
+}
+/*Стиль шапки сайта*/
+header{
+  height: 65px;
+  width: 99%;
+  background: #edeef0;
+  position: fixed;
+  z-index: 100;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+/*Заголовок*/
+h1 {
+  text-align: center;
+  color: rgba(0,0,0,0.6);
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  font-size: 50px;
+  margin-top: 0px;
+
+}
+/*Основной аккаунт*/
+.main{
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-left: 20px;
+  background: #FFFFFF;
+  float: left;
+  z-index: 100000;
+  width: 91%;
+  margin-bottom: 80px;
+
+}
+/*Стиль меню*/
+div.navbar{
+  margin-top: 70px;
+  height: 300px;
+  width: 7%;
+  float: left;
+  text-align: center;
+
+}
+
+ul.nav{
+  list-style: none;
+  text-align: center;
+  padding-left: 0px;
+}
+
+/*Иконки для меню*/
+img.icon{
+  height: 80px;
+  width: 80px;
+  padding-bottom: 10px;
+}
+/*Стиль текста для названий*/
+.title{
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Texturina', serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+/*Левое выравнивае текста*/
+.lefttext{
+  float: right;
+  background-color: white;
+  text-align: justify;
+  font-size: 1.2em ;
+  font-family: 'century gothic', Monospace;
+  margin-left: 50px;
+}
+/*Правое выравнивание текста*/
+.righttext{
+  float: left;
+  background-color: white;
+  text-align: justify;
+  font-size: 1.2em ;
+  font-family: 'century gothic', Monospace;
+  margin-right: 50px;
+}
+/*Левое выравнивае изображения*/
+.leftimg{
+  float: left;
+  height: 100%;
+  width: 60%;
+  margin-left: 50px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+/*Правое выравнивание изображения*/
+.rightimg{
+  float: right;
+  height: 100%;
+  width: 60%;
+  margin-right: 50px;
+  margin-left: 15px;
+  object-fit: cover;
+}
+/*Разделительная линия*/
+hr{
+  height: 15px;
+  width: auto;
+  background-color: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+/*Подвал сайта*/
+.footer{
+
+  background: #edeef0;
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+}
+.footer > div {
+  margin-left: 10px;
+    font-size: 1em ;
+    font-family: 'century gothic', Monospace;
+    text-align: left;
+}
+/*Выравние текста для страницы об авторе*/
+div.fb{
+  font-size: 2em ;
+  font-family: 'century gothic', Monospace;
+  text-align: center;
+}
+/*Стиль кнопок для смены дизайна таблицы*/
+input{
+  background:#eee;
+  width: 130px;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  }
+  div.inp{
+      margin-left: 33%;
+  }
