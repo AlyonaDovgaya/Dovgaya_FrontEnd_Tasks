@@ -1,0 +1,163 @@
+/*Фон всего сайта*/
+body{
+  background: #edeef0;
+}
+/*Стиль шапки сайта*/
+header{
+  width: 89%;
+  background: #e3e3e3;
+  z-index: 100;
+  border-radius: 10px;
+  box-shadow: 0 10px 5px rgba(0,0,0,0.25), 0 2px 5px rgba(0,0,0,0.22);
+  padding: 1.5em 5%;
+  text-align: justify;
+  /*Фиксация шапки*/
+  position: fixed;
+  height: 6em;
+}
+/*Выравнивание в одну линию элементов меню и заголовка*/
+header h1,
+header nav {
+    display: inline-block;
+}
+header h1 {
+    height: 100%;
+}
+header::after {
+    content: '';
+    display: inline-block;
+    width: 99%;
+}
+
+header h1::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+/*Заголовок*/
+h1 {
+  font-size: 6em;
+  margin-top: 0px;
+  letter-spacing: 3px;
+  font-family: FreeMono, monospace;
+}
+
+/*Основной аккаунт*/
+.main{
+  border-radius: 20px;
+  margin-top: 12%;
+  background: #FFFFFF;
+  float: left;
+  z-index: 100000;
+  width: 91%;
+  margin-bottom: 10%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*Иконки для меню*/
+img.icon{
+  height: 80px;
+  width: 80px;
+  margin: 0px;
+  padding-left: 1.5em;
+}
+
+/*Стиль текста для названий*/
+.title{
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Texturina', serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+/*Левое выравнивае текста*/
+.lefttext{
+  /*режим обтекания справа*/
+  float: right;
+  background-color: white;
+  text-align: justify;
+  font-size: 1.2em ;
+  font-family: 'century gothic', Monospace;
+  margin-left: 50px;
+}
+
+/*Правое выравнивание текста*/
+.righttext{
+  /*режим обтекания слева*/
+  float: left;
+  background-color: white;
+  text-align: justify;
+  font-size: 1.2em ;
+  font-family: 'century gothic', Monospace;
+  margin-right: 50px;
+}
+
+/*Левое выравнивае изображения*/
+.leftimg{
+  /*режим обтекания слева*/
+  float: left;
+  height: 100%;
+  width: 60%;
+  margin-left: 50px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+/*Правое выравнивание изображения*/
+.rightimg{
+  /*режим обтекания справа*/
+  float: right;
+  height: 100%;
+  width: 60%;
+  margin-right: 50px;
+  margin-left: 15px;
+  object-fit: cover;
+}
+/*Разделительная линия*/
+hr{
+  height: 15px;
+  width: auto;
+  background-color: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+/*Подвал сайта*/
+.footer{
+
+  background: #edeef0;
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+}
+.footer > div {
+  margin-left: 10px;
+    font-size: 1em ;
+    font-family: 'century gothic', Monospace;
+    text-align: left;
+}
+/*Выравние текста для страницы об авторе*/
+div.fb{
+  font-size: 2em ;
+  font-family: 'century gothic', Monospace;
+  text-align: center;
+}
+/*Стиль кнопок для смены дизайна таблицы*/
+input{
+  background:#eee;
+  width: 130px;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  }
+  div.inp{
+      margin-left: 33%;
+  }

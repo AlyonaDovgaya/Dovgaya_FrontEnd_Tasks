@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Modern Art</title>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <link id="table-style" rel="stylesheet" href="table1.css">
+    <script defer src="script.js"></script>
+</head>
+<body vocab="http://schema.org/">
+  <!--Заголовок сайта -->
+  <header property="http://purl.org/dc/terms/title">
+    <h1>Modern Art</h1>
+
+    <!--Блок меню -->
+    <nav>
+    <div class="navbar">
+      <a href="home.html"><img class="icon" src="icons/home.png" alt="Home"></a>
+      <a href="table.html"><img class="icon" src="icons/table.png" alt="Table"></a>
+      <a href="about.html"><img class="icon" src="icons/about.png" alt="About"></a>
+      </div>
+    </nav>
+
+  </header>
+
+<div>
+
+    <!--Основной контент страницы -->
+    <div class="main">
+
+      <p class="title" property="name">Список самых посещаемых художественных музеев мира</p>
+        <div class="inp">
+            <input type = "button" value="Дизайн 1" onclick = 'styleNew("table1.css")'>
+            <input type = "button" value="Дизайн 2" onclick = 'styleNew("table2.css")'>
+        </div>
+
+        <div class="table">
+        <table property="http://purl.org/dc/terms/tableOfContents">
+          <tr>
+            <th>Название</th>
+            <th>Город</th>
+            <th>Страна</th>
+            <th>Год основания</th>
+            <th>Посетителей в год</th>
+            <th>Фото</th>
+            </tr>
+           <tr>
+            <td>Лувр</td>
+            <td>Париж</td>
+            <td>Франция</td>
+            <td>1792</td>
+            <td>9 260 000</td>
+            <td><img src="tablesImg/luvr.jpg"></td>
+           </tr>
+          <tr>
+            <td>Британский музей</td>
+            <td>Лондон</td>
+            <td>Великобритания</td>
+            <td>1753</td>
+            <td>6 695 213</td>
+            <td><img src="tablesImg/british.jpg"></td>
+          </tr>
+          <tr>
+            <td>Метрополитен-музей</td>
+            <td>Нью-Йорк</td>
+            <td>США</td>
+            <td>1870</td>
+            <td>6 162 147</td>
+            <td><img src="tablesImg/metropolit.jpg"></td>
+          </tr>
+          <tr>
+            <td>Музеи Ватикана</td>
+            <td>Ватикан (Рим)</td>
+            <td>Ватикан</td>
+            <td>1506</td>
+            <td>5 891 332</td>
+            <td><img src="tablesImg/vatican.jpg"></td>
+          </tr>
+          <tr>
+            <td>Тейт Модерн</td>
+            <td>Лондон</td>
+            <td>Великобритания</td>
+            <td>2000</td>
+            <td>5 785 427</td>
+            <td><img src="tablesImg/TateModern.jpg"></td>
+          </tr>
+          </table>
+          </div>
+
+    </div>
+  <!--Подвал сайта -->
+  <footer class="footer" >
+    <div id="name" property = "http://purl.org/dc/dcmitype/Text"></div>
+    <div id="date" property = "http://purl.org/dc/dcmitype/Text"></div>
+    <div id="version" property = "http://purl.org/dc/dcmitype/Text"></div>
+  </footer>
+</body>
+</html>
