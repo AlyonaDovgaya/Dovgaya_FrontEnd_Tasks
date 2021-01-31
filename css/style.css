@@ -1,0 +1,157 @@
+body{
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(189, 189, 189, 0.7);
+    user-select: none;
+    font-family: 'Texturina', serif;;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    background-color: rgb(120, 120, 120, 0.25);
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 360px;
+    font-family: 'Texturina', serif;;
+}
+
+.item{
+    background-color: rgb(120, 120, 120, 0.25);
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+div.item:hover{
+    background-color: rgb(120, 120, 120, 0.8);
+}
+
+form{
+    text-align: center;
+    max-width: 100%;
+}
+
+input{
+    width: 99%;
+    height: 60px;
+    border: none;
+    font-size: 30px;
+    outline: none;
+    text-align: right;
+}
+
+.input{
+    grid-column: 1/-1;
+    padding: 0px;
+}
+
+.clean{
+    grid-column: 1/3;
+    background-color:  rgb(253, 77, 89, 0.25);
+}
+div.item.clean:hover{
+  background-color:  rgb(253, 77, 89, 0.5);
+}
+
+.back{
+    grid-column: 3/-1;
+    background-color:  rgb(253, 77, 89, 0.25);
+}
+div.item.back:hover{
+  background-color:  rgb(253, 77, 89, 0.5);
+}
+
+.equal{
+    grid-column: 4;
+    grid-row: 6/7;
+    background-color: rgb(80, 81, 255, 0.25);
+}
+div.item.equal:hover{
+  background-color:  rgb(80, 81, 255, 0.5);
+}
+
+.calc_mode{
+  grid-column: 1/4;
+}
+
+label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 15px;
+	margin-right: 10px;
+	font-size: 16px;
+  color: black;
+}
+input[type=radio] {
+	display: none;
+}
+label:before {
+	content: "";
+	display: inline-block;
+	width: 0.6em;
+	height: 0.6em;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: white;
+}
+.calc_mode label:before {
+	border-radius: 8px;
+}
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: black;
+    text-align: center;
+    line-height: 0.6em;
+}
+
+.checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+.checkbox + label {
+	position: relative;
+	padding: 0 0 0 15px;
+	cursor: pointer;
+}
+input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    color: black;
+    text-align: center;
+    line-height: 0.6em;
+}
+
+.button{
+  background-color: rgb(120, 120, 120, 0.25);
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Texturina', serif;
+  font-size: 16px;
+  height: 30px;
+  width: 100px;
+}
+.btn_history{
+  grid-column: 4;
+}
+
+.history{
+  grid-column: 1/5;
+  max-width: 360px;
+  font-family: 'Texturina', serif;
+  background-color: white;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10px;
+  visibility: hidden;
+}
