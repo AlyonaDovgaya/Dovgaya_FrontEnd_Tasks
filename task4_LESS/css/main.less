@@ -1,0 +1,159 @@
+@import "vars";
+@import "mixins";
+
+body{
+    background: @primary;
+}
+
+header{
+    width: 89%;
+    background: @header-color;
+    color: white;
+    z-index: 1000;
+    border-radius: @radius;
+    padding: 0.5em 5%;
+    position: fixed;
+    text-align: justify;
+}
+header h1,
+header nav {
+    display: inline-block;
+}
+header h1 {
+    height: 100%;
+}
+header::after {
+    content: '';
+    display: inline-block;
+    width: 99%;
+}
+header h1::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#navbar{
+    list-style-type: none;
+    text-align: center;
+}
+#navbar li { display: inline; }
+#navbar a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+#navbar a:hover {
+    background-color: @hover-bg;
+}
+.news{
+    color: black;
+    text-align: justify;
+    margin-left: 10px;
+    padding-top: 8em;
+    float: left;
+    width: 20%;
+}
+section{
+    border: black 10px;
+    background: darken(@primary, 10%);
+}
+
+.title{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Texturina', serif;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+hr{
+    height: 15px;
+    width: auto;
+    background-color: black;
+    border-radius: @radius;
+    margin: 50px 20px;
+}
+.main{
+    text-align: center;
+    border-radius: @radius;
+    background: white;
+    float: right;
+    z-index: 10;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top: 8em;
+}
+.text{
+    background-color: white;
+    text-align: justify;
+    font-size: 1.2em ;
+    font-family: 'century gothic', Monospace;  
+    
+    &--left {
+        float: right;
+        margin-left: 50px;
+    }
+    
+    &--right {
+        float: left;
+        margin-right: 50px;
+    }
+    
+    &--center{
+        text-align: center;
+    }
+}
+.img {
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+    
+    &--left{
+        float: left;
+        margin-left: 50px;
+        margin-right: 15px;
+    }
+    
+    &--right{
+        float: right;
+        margin-left: 15px;
+        margin-right: 50px;
+    }
+}
+
+/*Стиль кнопок для смены дизайна таблицы*/
+.btn{
+    width: 130px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: @radius;
+    transition: background .1s linear;
+    
+    &--first{
+        .btn(@button1);
+    }  
+    &--second{
+        .btn(@button2);
+    }
+}
+
+/*Подвал сайта*/
+.footer{
+    background: @primary;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1000;
+}
+.footer > div {
+    margin-left: 10px;
+    font-size: 1em ;
+    font-family: 'century gothic', Monospace;
+    text-align: left;
+}

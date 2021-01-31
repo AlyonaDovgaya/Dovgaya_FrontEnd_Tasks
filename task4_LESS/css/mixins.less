@@ -1,0 +1,10 @@
+//main: main.less
+
+.btn(@bg){
+    background-color: @bg;
+    
+    &:hover,
+    &:focus {
+        background-color: darken(@bg, 10%);
+    }
+}
