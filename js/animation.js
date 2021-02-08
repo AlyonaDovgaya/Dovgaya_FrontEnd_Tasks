@@ -22,6 +22,7 @@ function drawEllipse(ctx, coords, sizes, angle) {
 }
 
 function draw() {
+      //Figure 1
       var canvas = document.getElementById("canvas1");
       if (canvas.getContext) {
           var ctx = canvas.getContext('2d');
@@ -90,4 +91,75 @@ function draw() {
           ctx.stroke();
           ctx.closePath();
       }
-    }
+
+      //Figure 2
+      var canvas = document.getElementById("canvas2");
+      if (canvas.getContext) {
+          var ctx = canvas.getContext('2d');
+
+          //left wheel
+          ctx.beginPath();
+          ctx.arc(70, 225, 60, 0, 2 * Math.PI);
+          ctx.fillStyle = '#72acce';
+          ctx.fill();
+          ctx.lineWidth = 2;
+          ctx.strokeStyle = '#1b4e6b';
+          ctx.stroke();
+          ctx.closePath();
+
+          //Right wheel
+          ctx.beginPath();
+          ctx.arc(350, 225, 60, 0, 2 * Math.PI);
+          ctx.fillStyle = '#72acce';
+          ctx.fill();
+          ctx.lineWidth = 2;
+          ctx.strokeStyle = '#1b4e6b';
+          ctx.stroke();
+          ctx.closePath();
+
+          //Wheel for pedals
+          ctx.beginPath();
+          ctx.arc(190, 225, 20, 0, 2 * Math.PI);
+          ctx.lineWidth = 2;
+          ctx.strokeStyle = '#1b4e6b';
+          ctx.stroke();
+          ctx.closePath();
+
+          //Pedals
+          ctx.beginPath();
+          ctx.moveTo(175, 210);
+          ctx.lineTo(160, 195);
+          ctx.moveTo(205, 240);
+          ctx.lineTo(220, 255);
+
+          //Bike frame
+          ctx.moveTo(190, 225);
+          ctx.lineTo(70, 225);
+          ctx.moveTo(190, 225);
+          ctx.lineTo(160, 160);
+          ctx.lineTo(70, 225);
+          ctx.moveTo(160, 160);
+          ctx.lineTo(140, 120);
+          ctx.lineTo(115, 120);
+          ctx.lineTo(165, 120);
+
+          ctx.moveTo(190, 225);
+          ctx.lineTo(338, 150);
+          ctx.lineTo(160, 160);
+
+
+          //Steering wheel
+          ctx.moveTo(350, 225);
+          ctx.lineTo(330, 100);
+          ctx.lineTo(370, 40);
+          ctx.moveTo(330, 100);
+          ctx.lineTo(280, 130);
+
+
+
+          ctx.lineWidth = 2;
+          ctx.strokeStyle = '#1b4e6b';
+          ctx.stroke();
+
+      }
+}
