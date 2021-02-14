@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 7</title>
+    <link rel="stylesheet" href="css/style.css">
+   <script src="js/main.js"></script>
+  </head>
+  <body>
+
+
+
+    <div class="basket droppable" id="basket" style="background-image: url(img/closed.png); height: 150px; width: 100px;">
+    </div>
+
+    <img class="draggable" id="trash" src="img/trash.png" style='left:500px;top:500px;'>
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 900px; top: 100px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 1000px; top: 150px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 500px; top: 100px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 700px; top: 250px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 1080px; top: 300px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 450px; top: 350px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 850px; top: 400px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 1250px; top: 450px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 850px; top: 500px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 1100px; top: 550px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 700px; top: 325px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 680px; top: 375px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 1350px; top: 275px;">
+    <img class="draggable" id="trash" src="img/trash.png" style="left: 1400px; top: 425px;">
+
+    <script>
+    DragManager.onDragEnd = function (dragObject, dropElem) {
+    //Successful transfer, show 'open'
+    dropElem.classList.add('open');
+    //Function performed through 0.2s
+    setTimeout(function () {
+        //Removing the selected property from the element
+        dropElem.classList.remove('open');
+        //Temporary deletion of the transferred item
+        dragObject.elem.style.display = 'none';
+    }, 200);
+    };
+  </script>
+
+  </body>
+</html>

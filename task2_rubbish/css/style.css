@@ -1,0 +1,18 @@
+#trash{
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+}
+img{
+  position: absolute;
+}
+
+.basket {
+  cursor: pointer;
+  height: 150px;
+  width: 100px;
+  background-image: url(img/closed.png);
+}
+.open {
+  background: url(img/open.png) no-repeat;
+}
